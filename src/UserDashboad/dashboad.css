@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  /*background-color: #0b0f2b;*/
+  color: black;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #cceeff;
+}
+
+.sidebar {
+  width: 230px;
+ 
+  padding: 0rem;
+}
+
+.sidebar-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: gold;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu .active {
+  background-color: #0042ff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem 2rem;
+  background-color: aliceblue;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #000;
+}
+
+.top-nav li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.top-nav .active {
+  background-color: #0042ff;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: #000;
+}
+
+.wallet-card {
+  flex: 1;
+  min-width: 260px;
+  background: linear-gradient(135deg, rgb(163, 184, 252), #2c3e75);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.wallet-balance {
+  font-size: 2rem;
+  color: #000;
+  margin: 0.5rem 0;
+}
+
+.wallet-sub {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.summary-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-card {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.personal-summary {
+  background-color: #0050ff;
+  color: #ccc;
+  padding: 1.5rem;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.personal-summary .stats,
+.personal-summary .dates {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.personal-summary .stats div,
+.personal-summary .dates div {
+  text-align: center;
+}
+
+.status-tags {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.status-tags .not-verified {
+  background-color: #ff4d4d;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.status-tags .inactive {
+  background-color: orange;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.alert-box {
+  background-color: #ccc;
+  color: #000;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.card-container, .summary-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ccc;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.card-container-icons, .summary-section {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card {
+  color: #000;
+  background-color: #ccce;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.refer-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.left-panel {
+  flex: 2;
+  margin-top: 100px;
+}
+
+.activate-box {
+  display: flex;
+  background: #ccc;
+  border-radius: 30px;
+  margin-top: 1rem;
+  overflow: hidden;
+  color: #000;
+ 
+}
+
+.activate-box input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+.copy-btn {
+  background-color: #0042ff;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  color:#ccc;
+  color: #000;
+}
+
+.features p {
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+  color: #89fca0;
+}
+
+.right-panel {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.refer-card {
+  background-color: #abbffc;
+  border-radius: 20px;
+  padding: 1rem;
+  position: relative;
+  color: #000;
+}
+
+.refer-card .invite-btn {
+  background-color: #0042ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.send-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.package-card {
+  background-color: #abbffc;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.package-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.package-details .tag {
+  background-color: #0042ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.place-bid {
+  background-color: #0042ff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottom-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.bottom-tabs .tab {
+  background-color: #abbffc;
+  padding: 1rem;
+  border-radius: 15px;
+  flex: 1;
+  text-align: center;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.bottom-tabs .tab:last-child {
+  margin-right: 0;
+}
